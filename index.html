@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/earth.ico"
+      type="image/x-icon"
+    />
+    <title>Hackers | Uni</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="h-screen flex flex-col md:flex-row items-center bg-slate-800 text-white"
+  >
+    <section class="w-full p-8 md:w-1/2 text-center">
+      <div class="mb-4 hidden md:block">
+        <img
+          src="./assets/images/avatar.jpeg"
+          alt="profile"
+          class="w-40 h-40 object-cover rounded-full border-8 border-red-900 mx-auto"
+        />
+        <article>
+          <h3 class="text-2xl font-bold font-serif">Universidad de Hackers</h3>
+          <p class="text-slate-300">
+            Bienvenido a la Universidad de Programacion, donde la excelencia se
+            encuentra con la innovación. Nuestros programas de vanguardia
+            preparan a los estudiantes para el éxito en el campo dinámico del
+            Desarrollo Web, Aplicaciones y todo tipo de Juegos.
+          </p>
+        </article>
+      </div>
+      <section class="border-2 border-red-900 rounded-md bg-black font-mono">
+        <h6 class="mb-2 text-white">Beneficios de unirte a la comunidad:</h6>
+        <ul class="p-4 text-slate-300">
+          <li>Proyectos Reales</li>
+          <li>Ser un profesional competitivo</li>
+          <li>Networking</li>
+          <li>Dominio de cualquier lenguaje</li>
+          <li class="mt-2">
+            <a
+              href="https://github.com/EzequielMadrid"
+              target="_blank"
+              class="p-2 hover:bg-red-900 rounded-full text-sm"
+            >
+              Investiga más!
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <form
+      action="https://formsubmit.co/aftercode2023@gmail.com"
+      method="POST"
+      enctype="multipart/form-data"
+      class="w-full p-4 flex flex-col space-y-2 md:w-1/2 rounded-md text-center bg-slate-900"
+    >
+      <h6 class="mb-2 text-sm">
+        Completa con tus datos para ponernos en contacto contigo!
+      </h6>
+      <input type="hidden" name="_subject" value="Nuevo estudiante!" />
+      <input type="hidden" name="_template" value="table" />
+      <!--       <input
+        type="hidden"
+        name="_next"
+        value=""
+      /> -->
+      <input
+        type="text"
+        name="name"
+        placeholder="jaimito echeverry"
+        required
+        class="p-4 outline-none border-b-4 border-red-900 text-md font-mono bg-slate-700 text-white"
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="example@gmail.com"
+        required
+        class="p-4 outline-none border-b-4 border-red-900 text-md font-mono bg-slate-700 text-white"
+      />
+      <input
+        type="file"
+        name="file"
+        required
+        class="p-4 outline-none border-b-4 border-red-900 text-md font-mono bg-slate-700 text-white"
+      />
+      <textarea
+        name="message"
+        required
+        cols="30"
+        rows="3"
+        class="outline-none border-b-4 border-red-900 text-md font-mono bg-slate-700 text-white"
+      ></textarea>
+      <button
+        type="submit"
+        class="py-2 px-6 rounded-full font-bold bg-red-800 hover:bg-red-600"
+      >
+        Unirme
+      </button>
+    </form>
+  </body>
+</html>
